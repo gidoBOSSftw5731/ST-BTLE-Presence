@@ -2,7 +2,7 @@
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 source ~/.bashrc
 nvm install v8.11.1
-npm install -g node-red pm2 smartthings-mqtt-bridge libbluetooth-dev
+npm install -g node-red pm2 smartthings-mqtt-bridge
 apt install -y mosquitto mosquitto-clients git libbluetooth-dev
 systemctl enable mosquitto.service
 sudo setcap cap_net_raw+eip $(eval readlink -f `which node`)
